@@ -1,8 +1,8 @@
 # Based on setup.py from https://github.com/pypa/sampleproject
 
-from setuptools import setup
+import setuptools
 
-setup(
+setuptools.setup(
     name="maybe",
 
     version="0.4.0",
@@ -40,7 +40,7 @@ setup(
 
     keywords="sandbox files access",
 
-    packages=["maybe"],
+    packages=setuptools.find_packages(),
 
     install_requires=[
         "six==1.16.0",
